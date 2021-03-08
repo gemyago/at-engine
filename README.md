@@ -75,7 +75,7 @@ OK
 
 Install native deps:
 ```
-pio run -e universal
+pio lib install
 ```
 
 Run tests:
