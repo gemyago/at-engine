@@ -1,6 +1,6 @@
 #include <streams.h>
 
-namespace io
+namespace at
 {
 
 #ifdef ARDUINO

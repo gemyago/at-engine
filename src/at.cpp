@@ -83,11 +83,20 @@ namespace at
         _stream = stream;
         _defaultHandler = new DefaultHandler();
     }
+#ifdef ARDUINO
+    Engine::Engine(Stream *stream) : Engine(new at::SerialTextStream(stream))
+    {
+        _destructStream = true;
+    }
+#endif
 
     Engine::~Engine()
     {
         free(_handlers);
         delete _defaultHandler;
+        if(_destructStream) {
+            delete _stream;
+        }
     }
 
     void Engine::resetBuffer()

@@ -65,6 +65,7 @@ namespace at
     {
     private:
         at::TextStream *_stream;
+        bool _destructStream;
         Handler *_defaultHandler;
         Handler **_handlers = 0;
         size_t _handlersCount = 0;
@@ -76,6 +77,10 @@ namespace at
 
     public:
         Engine(at::TextStream *stream);
+#ifdef ARDUINO
+        Engine(Stream *stream);
+#endif
+
         ~Engine();
 
         void addCommandHandler(Handler *handler);

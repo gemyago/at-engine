@@ -1,6 +1,10 @@
 #ifndef AT_STREAMS_H
 #define AT_STREAMS_H
 
+#ifdef ARDUINO 
+#include <Arduino.h>
+#endif
+
 #include <stddef.h>
 
 namespace at
@@ -17,7 +21,6 @@ namespace at
     };
 
 #ifdef ARDUINO
-
     class SerialTextStream : public TextStream
     {
     private:
