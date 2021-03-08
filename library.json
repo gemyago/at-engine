@@ -1,0 +1,19 @@
+{
+    "name": "AT-Engine",
+    "version": "1.0.0",
+    "description": "Arduino library to setup serial communication using AT protocol",
+    "keywords": "at, arduino, serial, protocol",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/evgeny-myasishchev/at-engine.git"
+    },
+    "authors": [
+        {
+            "name": "Evgeny Myasishchev",
+            "email": "evgenymyasishchev@gmail.com",
+            "url": "https://github.com/evgeny-myasishchev"
+        }
+    ],
+    "license": "unlicense",
+    "frameworks": "arduino"
+}
