@@ -2,7 +2,7 @@ PIO_USER_LIBS_HOME=.pio/libdeps/universal
 
 CXX := g++
 CXXFLAGS := -g -std=c++17
-LDFLAGS  := -L/usr/lib -lstdc++ -lm -lpthread
+LDFLAGS  := -L/usr/lib -lstdc++ -lm -pthread
 BUILD := build
 OBJ_DIR := $(BUILD)/objects
 APP_DIR := $(BUILD)/apps
