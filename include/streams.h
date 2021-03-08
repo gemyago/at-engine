@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 
-namespace io
+namespace at
 {
 
     class TextStream
@@ -35,6 +35,6 @@ namespace io
 
 #endif
 
-} // namespace io
+} // namespace at
 
 #endif

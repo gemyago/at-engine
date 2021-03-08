@@ -28,10 +28,10 @@ namespace at
     class Responder
     {
     private:
-        io::TextStream *_stream;
+        at::TextStream *_stream;
 
     public:
-        Responder(io::TextStream *stream);
+        Responder(at::TextStream *stream);
 
         void write(const char ch);
         void write(const char *data);
@@ -64,7 +64,7 @@ namespace at
     class Engine
     {
     private:
-        io::TextStream *_stream;
+        at::TextStream *_stream;
         Handler *_defaultHandler;
         Handler **_handlers = 0;
         size_t _handlersCount = 0;
@@ -75,7 +75,7 @@ namespace at
         void resetBuffer();
 
     public:
-        Engine(io::TextStream *stream);
+        Engine(at::TextStream *stream);
         ~Engine();
 
         void addCommandHandler(Handler *handler);

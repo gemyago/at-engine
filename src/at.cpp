@@ -9,7 +9,7 @@ namespace at
     {
     }
 
-    Responder::Responder(io::TextStream *stream)
+    Responder::Responder(at::TextStream *stream)
     {
         this->_stream = stream;
     }
@@ -78,7 +78,7 @@ namespace at
         resp->writeOk();
     }
 
-    Engine::Engine(io::TextStream *stream)
+    Engine::Engine(at::TextStream *stream)
     {
         _stream = stream;
         _defaultHandler = new DefaultHandler();
