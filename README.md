@@ -9,3 +9,8 @@ Install native deps:
 ```
 pio run -e universal
 ```
+
+Run tests:
+```
+make test
+```
