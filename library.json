@@ -15,5 +15,14 @@
         }
     ],
     "license": "unlicense",
-    "frameworks": "arduino"
+    "frameworks": "arduino",
+    "export": {
+        "exclude":
+        [
+            "build",
+            "test",
+            "Makefile",
+            "platformio.ini"
+        ]
+    }
 }
