@@ -39,6 +39,7 @@ $(OBJ_DIR)/%.o: %.c*
 
 $(APP_DIR)/$(TARGET): $(OBJECTS)
 	@mkdir -p $(@D)
+	@echo Buidling target $(APP_DIR)/$(TARGET)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) $(LDFLAGS) -o $(APP_DIR)/$(TARGET) $(OBJECTS)
 
 build-test: $(APP_DIR)/$(TARGET)

@@ -65,7 +65,7 @@ namespace at
     {
     private:
         at::TextStream *_stream;
-        bool _destructStream;
+        bool _destructStream = false;
         Handler *_defaultHandler;
         Handler **_handlers = 0;
         size_t _handlersCount = 0;
