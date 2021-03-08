@@ -14,7 +14,7 @@
             "url": "https://github.com/evgeny-myasishchev"
         }
     ],
-    "license": "unlicense",
+    "license": "Unlicense",
     "frameworks": "arduino",
     "export": {
         "exclude":
