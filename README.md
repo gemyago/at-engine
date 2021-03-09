@@ -1,6 +1,14 @@
 # at-engine
 Arduino library to setup serial communication using AT protocol
 
+## Installing
+
+### Platformio
+
+```
+pio lib install --save evgenymyasishchev/AT-Engine
+```
+
 ## Example usage
 
 Define AT command handler
