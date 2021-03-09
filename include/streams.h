@@ -36,6 +36,9 @@ namespace at
         size_t read(char *buffer, size_t length);
         size_t write(const char *buffer, size_t size);
         size_t write(const int number);
+        size_t write(const unsigned int number);
+        size_t write(const long number);
+        size_t write(const unsigned long number);
         size_t write(const char value);
     };
 
