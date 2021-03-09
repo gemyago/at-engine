@@ -71,6 +71,8 @@ OK
 
 ## Dev notes
 
+You may need to have direnv and reflex installed
+
 ### Running tests
 
 Install native deps:
@@ -80,5 +82,12 @@ pio lib install
 
 Run tests:
 ```
+# All tests at once
 make test
+
+# Run all tests on every change
+tests-watch
+
+# Run specific tests only on every change
+tests-watch --gtest_filter=atResponder*
 ```
