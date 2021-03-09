@@ -1,6 +1,6 @@
 {
     "name": "AT-Engine",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Arduino library to setup serial communication using AT protocol",
     "keywords": "at, arduino, serial, protocol",
     "repository": {
