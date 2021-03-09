@@ -29,3 +29,5 @@ jobs:
         run: pio lib install
       - name: Run tests
         run: make test
+      - name: Check if compiles for nano
+        run: pio run -e nano -t size -d examples/ping/
