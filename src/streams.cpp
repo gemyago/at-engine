@@ -29,6 +29,22 @@ namespace at
     {
         return this->_serial->print(number);
     }
+
+    size_t SerialTextStream::write(const unsigned int number)
+    {
+        return this->_serial->print(number);
+    }
+
+    size_t SerialTextStream::write(const long number)
+    {
+        return this->_serial->print(number);
+    }
+
+    size_t SerialTextStream::write(const unsigned long number)
+    {
+        return this->_serial->print(number);
+    }
+
     size_t SerialTextStream::write(const char value)
     {
         return this->_serial->write(value);

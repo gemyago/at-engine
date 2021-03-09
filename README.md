@@ -1,6 +1,14 @@
 # at-engine
 Arduino library to setup serial communication using AT protocol
 
+## Installing
+
+### Platformio
+
+```
+pio lib install --save evgenymyasishchev/AT-Engine
+```
+
 ## Example usage
 
 Define AT command handler
@@ -71,6 +79,8 @@ OK
 
 ## Dev notes
 
+You may need to have direnv and reflex installed
+
 ### Running tests
 
 Install native deps:
@@ -80,5 +90,12 @@ pio lib install
 
 Run tests:
 ```
+# All tests at once
 make test
+
+# Run all tests on every change
+tests-watch
+
+# Run specific tests only on every change
+tests-watch --gtest_filter=atResponder*
 ```

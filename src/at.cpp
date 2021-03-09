@@ -35,6 +35,21 @@ namespace at
         this->_stream->write(value);
     }
 
+    void Responder::write(const unsigned int value)
+    {
+        this->_stream->write(value);
+    }
+
+    void Responder::write(const long value)
+    {
+        this->_stream->write(value);
+    }
+
+    void Responder::write(const unsigned long value)
+    {
+        this->_stream->write(value);
+    }
+
     void Responder::write(const char value)
     {
         this->_stream->write(value);

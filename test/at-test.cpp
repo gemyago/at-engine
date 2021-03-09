@@ -41,12 +41,28 @@ TEST(atResponder, writeLine)
 
 TEST(atResponder, write_int)
 {
-    const int value = test::randomNumber(0, 20000);
     TestTextStream testStream;
     at::Responder responder(&testStream);
-    responder.write(value);
 
-    ASSERT_EQ(std::to_string(value).c_str(), testStream.writeBuffer);
+    testStream.reset();
+    const int intVal = test::randomNumber(-20000, 20000);
+    responder.write(intVal);
+    ASSERT_EQ(std::to_string(intVal).c_str(), testStream.writeBuffer);
+
+    testStream.reset();
+    const unsigned uintVal = test::randomNumber(0, 20000);
+    responder.write(uintVal);
+    ASSERT_EQ(std::to_string(uintVal).c_str(), testStream.writeBuffer);
+
+    testStream.reset();
+    const long longVal = test::randomNumber(-20000, 20000);
+    responder.write(longVal);
+    ASSERT_EQ(std::to_string(longVal).c_str(), testStream.writeBuffer);
+
+    testStream.reset();
+    const unsigned long unsignedLongVal = test::randomNumber(0, 20000);
+    responder.write(unsignedLongVal);
+    ASSERT_EQ(std::to_string(unsignedLongVal).c_str(), testStream.writeBuffer);
 }
 
 TEST(atResponder, write_single_char)

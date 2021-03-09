@@ -36,6 +36,9 @@ namespace at
         void write(const char ch);
         void write(const char *data);
         void write(const int number);
+        void write(const unsigned int number);
+        void write(const long number);
+        void write(const unsigned long number);
         void writeLine(const char *line);
         void writeLine(const char *line, const size_t length);
         void writeOk();

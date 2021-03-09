@@ -38,6 +38,27 @@ size_t TestTextStream::write(const int number)
     return val.length();
 }
 
+size_t TestTextStream::write(const unsigned int number)
+{
+    auto val = std::to_string(number);
+    this->writeBuffer.append(val);
+    return val.length();
+}
+
+size_t TestTextStream::write(const long number)
+{
+    auto val = std::to_string(number);
+    this->writeBuffer.append(val);
+    return val.length();
+}
+
+size_t TestTextStream::write(const unsigned long number)
+{
+    auto val = std::to_string(number);
+    this->writeBuffer.append(val);
+    return val.length();
+}
+
 size_t TestTextStream::write(const char number)
 {
     this->writeBuffer.push_back(number);

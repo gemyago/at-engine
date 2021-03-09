@@ -17,6 +17,9 @@ namespace at
         virtual size_t read(char *buffer, size_t length) = 0;
         virtual size_t write(const char *buffer, size_t size) = 0;
         virtual size_t write(const int number) = 0;
+        virtual size_t write(const unsigned int number) = 0;
+        virtual size_t write(const long number) = 0;
+        virtual size_t write(const unsigned long number) = 0;
         virtual size_t write(const char value) = 0;
     };
 
@@ -33,6 +36,9 @@ namespace at
         size_t read(char *buffer, size_t length);
         size_t write(const char *buffer, size_t size);
         size_t write(const int number);
+        size_t write(const unsigned int number);
+        size_t write(const long number);
+        size_t write(const unsigned long number);
         size_t write(const char value);
     };
 
